@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xeCJK}
+\usepackage{amsmath}
+
+\begin{document}
+	
+
+	\begin{equation}
+		f(x,n) = \sum_{i=1}^{k}f(x-i,n-1)
+	\end{equation}
+	\begin{equation}
+		f(x-1,n) = \sum_{i=1}^{k}f(x-1-i,n-1)
+	\end{equation}
+	
+	由（1) - (2) 得
+		
+		\begin{equation}
+			f(x,n) = f(x-1,n-1) + f(x-1,n) - f(x-1-k,n-1)
+		\end{equation}
+	由 （3）  得到
+	 \begin{equation}
+	 	f(x-1,n) = f(x,n) + f(x-1-k,n-1)  -f(x-1,n)
+	 \end{equation}
+ 
+ \begin{equation}
+ 	f(x,n) = f(x+1,n) + f(x-k,n-1) - f(x,n)
+ \end{equation}
+	
+	
+	
+	
+	
+\end{document}
